@@ -1,0 +1,13 @@
+[Unit]
+Description=Parser bot
+After=multi-user.targetc
+
+[Service]
+User=deepak
+Group=admin
+Type=simple
+Restart=always
+ExecStart=/usr/bin/python3 /home/parser_bot/crypto_parser_bot-master/run.py
+
+[Install]
+WantedBy=multi-user.target
